@@ -204,12 +204,19 @@ function create_config( )
   -- A simple config with basic plugins and ourselves as privileged user
   config = {
     enabled_plugins = {
-     "Help_All",
+    "lock_adds",
+    "English_lock",
+    "AntiLink",
+    "AutoLeave",
+    "anti_#",
+    "anti_badword",
+    "Help_All",
     "Auto_Leave",
     "BLOCK",
     "Feedback",
     "Member_Manager",
     "Group_Manager",
+    "Member_Moderator",
     "S2A",
     "SUDO",
     "all",
@@ -336,7 +343,7 @@ tools for InfernalTG :
 >#14.invite
 >#15.leaders
 >#16.leave_ban
->#17.pluglist
+>#17.plugins
 >#18.realmcommands
 >#19.service_entergroup
 >#20.set
@@ -344,14 +351,14 @@ tools for InfernalTG :
 >#22.stats
 >#23.toengsupport
 >#24.topersupport
->#25.spammer_a
->#26.Spammer_i
+>#25.AntiLink
+>#26.anti_badword
 >#27.Version
 >#28.close_group
 >#29.kickall
->#30.SendPm
+>#30.Maseage
 >#31.tagall
->#32.share
+>#32.anti_adds
 help all plugin soon :D ,"
 You Can Get Bot version by sending !version,"
 Master admin : @ArashInfernal ,"
