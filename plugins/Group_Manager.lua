@@ -254,62 +254,6 @@ local function unlock_group_arabic(msg, data, target)
   end
 end
 
-local function lock_group_english(msg, data, target)
-	if not is_momod(msg) then
-		return 'For Moderators Only'
-	end
-	local group_lock_english = data[tostring(target)]['settings']['lock_english']
-	if group_english_lock == 'yes' then
-	return 'English Is Already locked!'
-else
-     data[tostring(target)]['settings']['lock_english'] = 'yes'
-     save_data(_config.moderation.data, data)
-     return 'english has been locked!'
-   end
- end
- 
-local function unlock_group_english(msg, data, target)
-	if not is_momod(msg) then
-		return 'For moderators Only!'
-	end
-	local group_lock_arabic = data[tostring(target)]['settings']['lock_english']
-        if group_english_lock == 'no' then
-        	return 'English is already unlocked!'
-	      else 
-        data[tostring(target)]['settings']['lock_arabic'] = 'no'
-        save_data(_config.moderation.data, data)
-        return 'English has been unlocked!'
-    end
-end
-
-local function group_lock_link(msg, data, target)
-if not is_momod(msg) then
-	return "'For Moderators only!'
-	end
-	local lock_group_link = data[tostring(target)]['settings']['lock_link']
-	if group_link_lock == 'yes' then
-		return 'AntiLink protection has been Locked!'
-	else
-	data[tostring(target)]['settings']['lock_english'] = 'yes'
-	save_data(_config.moderation.data, data)
-	return 'AntiLink protection is already locked!'
-    end
-end
-
-local function group_lock_link(msg, data, target)
-if not is_momod(msg) then
-	return "'For Moderators only!'
-        end
-	local lock_group_link = data[tostring(target)]['settings']['lock_link']
-	if group_link_lock == 'no' then
-        return 'AntiLink protection has been unLocked!'
-	else
-	data[tostring(target)]['settings']['lock_link'] = 'no'
-	save_data(_config.moderation.data, data)
-	return 'AntiLink protection is already unlocked!'
-    end
-end
-
 local function lock_group_bots(msg, data, target)
   if not is_momod(msg) then
     return "For moderators only!"
@@ -1045,14 +989,6 @@ local function run(msg, matches)
         savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked arabic ")
         return lock_group_arabic(msg, data, target)
       end
-      if matches[2] == 'english' then
-      	 savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked english ")
-      	 return lock_group_english(msg, data, target)
-      end
-      if matches[2] == 'link' then 
-      	 savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked link ")
-      	 return lock_group_link(msg, data, target)
-      end
       if matches[2] == 'bots' then
         savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked bots ")
         return lock_group_bots(msg, data, target)
@@ -1083,10 +1019,6 @@ local function run(msg, matches)
       if matches[2] == 'arabic' then
         savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked arabic ")
         return unlock_group_arabic(msg, data, target)
-      end
-      if matches[2] == 'english' then
-        savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked english ")
-        return unlock_group_english(msg, data, target)
       end
       if matches[2] == 'link' then
         savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked link ")
