@@ -999,6 +999,14 @@ local function run(msg, matches)
         savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked arabic ")
         return lock_group_arabic(msg, data, target)
       end
+      if matches[2] == 'english' then
+      	 savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked english ")
+      	 return lock_group_english(msg, data, target)
+      end
+      if matches[2] == 'link' then 
+      	 savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked link ")
+      	 return lock_group_link(msg, data, target)
+      end
       if matches[2] == 'bots' then
         savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked bots ")
         return lock_group_bots(msg, data, target)
