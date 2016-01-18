@@ -253,7 +253,17 @@ local function unlock_group_arabic(msg, data, target)
     return 'Arabic has been unlocked'
   end
 end
-
+local function lock_group_english(msg, data, target)
+	if not is_momod(msg) then
+		return "For moderators Only"
+	end
+	local group_lock_arabic = data[tostring(target)]['settings']['lock_english']
+        if group_lock_english == 'yes' then
+        	return "English is already locked!"
+	      else 
+                data[tostring(target)]['settings']['lock_arabic'] = 'yes'
+                save_data(_config.moderation.data, data)
+                return "Enlish has been locked!"
 local function lock_group_bots(msg, data, target)
   if not is_momod(msg) then
     return "For moderators only!"
