@@ -204,7 +204,6 @@ function create_config( )
   -- A simple config with basic plugins and ourselves as privileged user
   config = {
     enabled_plugins = {
-    "lock_adds",
     "English_lock",
     "AntiLink",
     "AutoLeave",
@@ -213,10 +212,7 @@ function create_config( )
     "Help_All",
     "Auto_Leave",
     "BLOCK",
-    "Feedback",
     "Member_Manager",
-    "Group_Manager",
-    "Member_Moderator",
     "S2A",
     "SUDO",
     "all",
