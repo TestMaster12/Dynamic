@@ -67,7 +67,7 @@ local function list_plugins(only_enabled)
       text = text..v..'  '..status..'\n'
     end
   end
-  local text = text..'\n'..nact..' plugins enabled➕ and \n -'..nsum..' plugins installed➖.'
+  local text = text..'\n'..nact..' plugins enabled➕ and \n '..nsum..' plugins installed➖.'
   return text
 end
 
@@ -152,7 +152,7 @@ end
 
 local function run(msg, matches)
   -- Show the available plugins 
-  if matches[1] == '[!/]plug' and is_sudo(msg) then --after changed to moderator mode, set only sudo
+  if matches[1] == 'plug' and is_sudo(msg) then --after changed to moderator mode, set only sudo
     return list_all_plugins()
   end
 
@@ -197,15 +197,8 @@ end
 return {
   description = "Plugin to manage other plugins. Enable, disable or reload.", 
   usage = {
-      moderator = {
           "!plugins - [pluginNAME] Group : disable plugin only this chat.",
           "!plugins + [pluginNAME] Group : enable plugin only this chat.",
-          },
-      sudo = {
-          "!plugins : list all plugins.",
-          "!plugins enable [plugin] : enable plugin.",
-          "!plugins disable [plugin] : disable plugin.",
-          "!plugins reload : reloads all plugins." },
           },
   patterns = {
     "^[!/]plug$",
