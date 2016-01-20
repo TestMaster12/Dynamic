@@ -204,15 +204,13 @@ function create_config( )
   -- A simple config with basic plugins and ourselves as privileged user
   config = {
     enabled_plugins = {
-    "English_lock",
-    "AntiLink",
     "AutoLeave",
-    "anti_#",
-    "anti_badword",
     "Help_All",
     "Auto_Leave",
     "BLOCK",
     "Member_Manager",
+    "Group_Manager",
+    "getplug",
     "S2A",
     "SUDO",
     "all",
@@ -347,15 +345,14 @@ tools for InfernalTG :
 >#22.stats
 >#23.toengsupport
 >#24.topersupport
->#25.AntiLink
->#26.anti_badword
+>#25.getplug
+>#26. @INFERNALTEAMCH
 >#27.Version
 >#28.close_group
 >#29.kickall
 >#30.Maseage
 >#31.tagall
 >#32.anti_adds
-help all plugin soon :D ,"
 You Can Get Bot version by sending !version,"
 Master admin : @ArashInfernal ,"
 our channel : @INFERNALTEAMCH ,"
