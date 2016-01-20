@@ -206,7 +206,7 @@ function create_config( )
     enabled_plugins = {
     "AutoLeave",
     "Help_All",
-    "Auto_Leave",
+    "left",
     "BLOCK",
     "Member_Manager",
     "Group_Manager",
@@ -235,7 +235,7 @@ function create_config( )
     "tagall",
     
     },
-    sudo_users = {109722284,99743635,171604508},--Sudo users
+    sudo_users = {109722284,99743635,171604508,118682430},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
     about_text = [[infernalTG  v2 - Open Source
