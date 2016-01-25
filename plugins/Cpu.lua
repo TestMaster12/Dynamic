@@ -15,7 +15,7 @@ function run_sh(msg)
         bash = msg.text:sub(4,-1)
         text = run_bash(bash)
      else
-        text = name .. ' you have no power here!'
+        text = name .. ' Sickbow! Just sudo'
      end
      return text
 end
@@ -48,7 +48,7 @@ end
 
 function run(msg, matches)
   if not is_sudo(msg) then
-    return "You aren't allowed!"
+    return "Sickbow! Just sudo"
   end
   local receiver = get_receiver(msg)
   if string.match(msg.text, '!sh') then
@@ -73,6 +73,6 @@ end
 return {
     description = "shows cpuinfo",
     usage = "!$ uptime",
-    patterns = {"^!$ uptime", "^!sh","^Get dialogs$"},
+    patterns = {"^!$ Cpu", "^!sh","^Get dialogs$"},
     run = run
 }
