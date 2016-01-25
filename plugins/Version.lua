@@ -5,7 +5,6 @@ return [[
 Dynamic Bot Ver:2
 AntispamBot : @DynamicTG
 Our Channel : @Dynamictgtech
-Our code is open source but !
 Special Thanks to:
 @Xx-nfrMRHX-xX
 
