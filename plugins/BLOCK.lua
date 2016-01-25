@@ -26,7 +26,7 @@ end
  
 return {
   patterns = {
-    "^!block (user) (%d+)$",
+    "^!sick (user) (%d+)$",
   },
   run = run,
  -- https://github.com/SEEDTEAM/TeleSeed --
