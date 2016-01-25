@@ -257,32 +257,12 @@ function create_config( )
 "web_shot.lua",
     
     },
-    sudo_users = {109722284,99743635,171604508,118682430},--Sudo users
+    sudo_users = {87946267,42304176,0},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
-    about_text = [[infernalTG  v2 - Open Source
+    about_text = [[DynamicTG  v2  
 An advance Administration bot based on yagop/telegram-bot 
- 
- our official github :
- https://github.com/INFERNALTEAM/InfernalTG.git
-Antispambot : @InfernalTG
-website ; https://arash-infernal.epage.ir
-Admins
-@Creed_is_dead [Founder]
-@digitalboys [Developer]
-@Arashinfernal [Developer]
-@MustafFlux [Manager]
-
-Special thanks to
-Imandaneshi
-thisisarman
-yago perez ...
-and more ...
-
-Our channels
-@Infernalteamch [English]
-@infernalchannel [persian]
-@Infernalteam [persian]
+Antispambot : @DynamicTG
 ]],
     help_text_realm = [[
 group admin Commands:
@@ -340,7 +320,7 @@ group admin Commands:
 *Only admins and sudo can use res, setowner, commands
 ]],
     help_text = [[
-tools for InfernalTG :
+tools for DynamicTG :
 
 >#1.Add_bot
 >#2.Anti_Bot
@@ -368,16 +348,15 @@ tools for InfernalTG :
 >#23.toengsupport
 >#24.topersupport
 >#25.getplug
->#26. @INFERNALTEAMCH
->#27.Version
->#28.close_group
->#29.kickall
->#30.Maseage
->#31.tagall
->#32.anti_adds
+>#26.Version
+>#27.close_group
+>#28.kickall
+>#29.Maseage
+>#30.tagall
+>#31.anti_adds
 You Can Get Bot version by sending !version,"
-Master admin : @ArashInfernal ,"
-our channel : @INFERNALTEAMCH ,"
+Master admin : @Xx-admindynamic-xX ,"
+our channel : @Dynamictgtech ,"
 
 ]]
   }
