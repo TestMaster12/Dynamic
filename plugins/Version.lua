@@ -2,18 +2,13 @@ do
 
 function run(msg, matches)
 return [[ 
-INFERNALTEAM Robot Ver 4.2
-AntispamBot : @InfernalTG
-website : https://arashinfernal.epage.ir
-Our Channel : @INFERNALTEAMCH
-@INFERNALCHANNEL
-@INFERNALTEAM
+Dynamic Bot Ver:2
+AntispamBot : @DynamicTG
+Our Channel : @Dynamictgtech
 Our code is open source but !
-remember : copy right!
-https://github.com/INFERNALTEAM/InfernalTG
-spical thanx...
-imandaneshi ...
-iwals ...
+Special Thanks to:
+@Xx-nfrMRHX-xX
+
 
 ]]
 end
@@ -23,6 +18,7 @@ description = "Shows bot Version",
 usage = "Version  : Shows bot Version",
 patterns = {
 "^!version$"
+"^![V]ver$"
 }, 
 run = run 
 }
