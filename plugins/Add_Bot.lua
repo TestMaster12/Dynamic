@@ -41,12 +41,12 @@ do
   return {
     description = 'Invite the bot into a group chat via its invite link.',
     usage = {
-      '!AddBot : Join a group by replying a message containing invite link.',
-      '!AddBot [invite_link] : Join into a group by providing their [invite_link].'
+      '!join : Join a group by replying a message containing invite link.',
+      '!join [invite_link] : Join into a group by providing their [invite_link].'
       },
     patterns = {
-      '^!AddBot$',
-      '^!AddBot (.*)$'
+      '^!join $',
+      '^!join (.*)$'
     },
     run = run
   }
